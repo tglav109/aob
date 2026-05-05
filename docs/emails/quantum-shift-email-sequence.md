@@ -1,7 +1,7 @@
 # Quantum Shift Email Sequence
 
 **Event:** Quantum Shift, Sunday 17 May 2026
-**Sessions:** 9:30am UK / 10:30am CET / 4:30am NY  ·  5pm UK / 6pm CET / 12pm NY
+**Sessions:** 9:30 to 11:30am UK  ·  5 to 7pm UK
 **Trigger form:** GHL form `JXFlOEgAhMoElAqLBG1L` (AOB | Event: QS Optin | ARM)
 **Brand:** Alchemy of Breath. Marcellus + Roboto. Gold #cc9924, teal #354d4c, ink #1a1a18, off-white #f9f8f5. **Zero em dashes.**
 
@@ -13,7 +13,7 @@
 |---|------|--------|------|---------|---------|
 | 1 | T+0 | Immediate on form submit | Anthony Abbagnano | You are in. Quantum Shift, Sunday 17 May | Confirm + calendar invite + soft recording mention |
 | 2 | T+2 days | After they have settled | Amy Rachelle, ND | What nervous system regulation actually means | Educational primer that earns trust + frames Sunday |
-| 3 | T-1 day (Saturday 16 May) | 24h before | Anthony Abbagnano | Tomorrow. 9:30am or 5pm UK | Reminder + what to prepare |
+| 3 | T-1 day (Saturday 16 May) | 24h before | Anthony Abbagnano | Tomorrow. Part 1 at 9:30am or Part 2 at 5pm UK | Reminder + what to prepare |
 | 4 | Sunday 17 May, 7am UK | 2h before morning session | Alchemy of Breath | Quantum Shift starts in 2 hours | Final morning reminder + access link |
 | 5 | Sunday 17 May, 4pm UK | 1h before evening session | Alchemy of Breath | Evening session in 1 hour | Final evening reminder |
 
@@ -46,14 +46,14 @@ All emails use the same wrapper. Inline CSS only. 600px max-width. Tables for la
 
 ### Logo (header)
 ```html
-<img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;" />
+<img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;" />
 ```
 
 ---
 
 ## EMAIL 1 of 5 · Confirmation (T+0)
 
-**From:** Anthony Abbagnano `<hello@alchemyofbreath.com>`
+**From:** Anthony Abbagnano `<info@alchemyofbreath.com>`
 **Subject:** You are in. Quantum Shift, Sunday 17 May.
 **Preview text:** The live link, the calendar invite, and one note about the recording.
 
@@ -65,8 +65,8 @@ Hi {{first_name}},
 You are in. Quantum Shift, Sunday 17 May.
 
 Two live sessions:
-  9:30am UK / 10:30am CET / 4:30am NY
-  5pm UK / 6pm CET / 12pm NY
+  9:30 to 11:30am UK
+  5 to 7pm UK
 
 You can come to either or both. Same content, different time of day.
 
@@ -94,7 +94,7 @@ PS. Please reply if you have a question. I read every reply.
     <table cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background:#ffffff;">
       <!-- Header -->
       <tr><td style="padding:32px 32px 16px;text-align:center;background:#1a1a18;">
-        <img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
+        <img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
         <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:18px 0 0;">Quantum Shift &middot; Sunday 17 May 2026</p>
       </td></tr>
 
@@ -116,8 +116,8 @@ PS. Please reply if you have a question. I read every reply.
         <table cellpadding="0" cellspacing="0" width="100%" style="background:#f9f8f5;border:1px solid #d3cdb3;">
           <tr><td style="padding:22px 24px;">
             <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:0 0 12px;">Your sessions</p>
-            <p style="font-family:'Marcellus',Georgia,serif;font-size:18px;color:#1a1a18;margin:0 0 6px;letter-spacing:-0.01em;">Morning &middot; 9:30am UK / 10:30am CET / 4:30am NY</p>
-            <p style="font-family:'Marcellus',Georgia,serif;font-size:18px;color:#1a1a18;margin:0;letter-spacing:-0.01em;">Evening &middot; 5pm UK / 6pm CET / 12pm NY</p>
+            <p style="font-family:'Marcellus',Georgia,serif;font-size:18px;color:#1a1a18;margin:0 0 6px;letter-spacing:-0.01em;">Morning &middot; 9:30 to 11:30am UK</p>
+            <p style="font-family:'Marcellus',Georgia,serif;font-size:18px;color:#1a1a18;margin:0;letter-spacing:-0.01em;">Evening &middot; 5 to 7pm UK</p>
           </td></tr>
         </table>
       </td></tr>
@@ -199,7 +199,7 @@ Co-founder, Alchemy of Breath
   <tr><td align="center">
     <table cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background:#ffffff;">
       <tr><td style="padding:32px 32px 16px;text-align:center;background:#1a1a18;">
-        <img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
+        <img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
         <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:18px 0 0;">Quantum Shift &middot; Before Sunday</p>
       </td></tr>
 
@@ -257,8 +257,8 @@ Co-founder, Alchemy of Breath
 
 ## EMAIL 3 of 5 · Day-Before Reminder (T-1, Saturday 16 May)
 
-**From:** Anthony Abbagnano `<hello@alchemyofbreath.com>`
-**Subject:** Tomorrow. 9:30am or 5pm UK.
+**From:** Anthony Abbagnano `<info@alchemyofbreath.com>`
+**Subject:** Tomorrow. Part 1 at 9:30am or Part 2 at 5pm UK.
 **Preview text:** A short note from Anthony before we sit together.
 
 ### Plain-text version
@@ -269,8 +269,8 @@ Hi {{first_name}},
 A quick note before tomorrow.
 
 Two live sessions:
-  Morning: 9:30am UK / 10:30am CET / 4:30am NY
-  Evening: 5pm UK / 6pm CET / 12pm NY
+  Morning: 9:30 to 11:30am UK
+  Evening: 5 to 7pm UK
 
 Same content, different time of day. Come to either or both.
 
@@ -298,7 +298,7 @@ Anthony
   <tr><td align="center">
     <table cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background:#ffffff;">
       <tr><td style="padding:32px 32px 16px;text-align:center;background:#1a1a18;">
-        <img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
+        <img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
         <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:18px 0 0;">Tomorrow &middot; Sunday 17 May</p>
       </td></tr>
 
@@ -317,8 +317,8 @@ Anthony
         <table cellpadding="0" cellspacing="0" width="100%" style="background:#f9f8f5;border:1px solid #d3cdb3;">
           <tr><td style="padding:22px 24px;">
             <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:0 0 12px;">Two sessions</p>
-            <p style="font-family:'Marcellus',Georgia,serif;font-size:17px;color:#1a1a18;margin:0 0 6px;letter-spacing:-0.01em;">Morning &middot; 9:30am UK / 10:30am CET / 4:30am NY</p>
-            <p style="font-family:'Marcellus',Georgia,serif;font-size:17px;color:#1a1a18;margin:0;letter-spacing:-0.01em;">Evening &middot; 5pm UK / 6pm CET / 12pm NY</p>
+            <p style="font-family:'Marcellus',Georgia,serif;font-size:17px;color:#1a1a18;margin:0 0 6px;letter-spacing:-0.01em;">Morning &middot; 9:30 to 11:30am UK</p>
+            <p style="font-family:'Marcellus',Georgia,serif;font-size:17px;color:#1a1a18;margin:0;letter-spacing:-0.01em;">Evening &middot; 5 to 7pm UK</p>
             <p style="font-family:Roboto,Arial,sans-serif;font-size:13px;color:#4a4a46;margin:14px 0 0;">Same content, different time of day. Come to either or both.</p>
           </td></tr>
         </table>
@@ -354,9 +354,9 @@ Anthony
 
 ## EMAIL 4 of 5 · 2 Hours Before Morning Session (Sunday 17 May, 7am UK)
 
-**From:** Alchemy of Breath `<hello@alchemyofbreath.com>`
+**From:** Alchemy of Breath `<info@alchemyofbreath.com>`
 **Subject:** Quantum Shift starts in 2 hours
-**Preview text:** 9:30am UK / 10:30am CET / 4:30am NY. Here is your link.
+**Preview text:** 9:30 to 11:30am UK. Here is your link.
 
 ### Plain-text version
 
@@ -365,9 +365,9 @@ Hi {{first_name}},
 
 We start in 2 hours.
 
-  9:30am UK / 10:30am CET / 4:30am NY
+  9:30 to 11:30am UK
 
-Your live link: {{live_link_url}}
+Your live link: {{custom_values.btw_am_session_link}}
 
 The same link works for the evening session. Bookmark it.
 
@@ -390,18 +390,18 @@ Anthony &amp; Amy
   <tr><td align="center">
     <table cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background:#ffffff;">
       <tr><td style="padding:32px 32px 16px;text-align:center;background:#1a1a18;">
-        <img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
+        <img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
         <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:18px 0 0;">Today &middot; Quantum Shift</p>
       </td></tr>
 
       <tr><td style="padding:40px 32px 8px;text-align:center;">
         <h1 style="font-family:'Marcellus',Georgia,serif;font-size:34px;line-height:1.2;letter-spacing:-0.02em;color:#1a1a18;margin:0;">We start in 2 hours.</h1>
-        <p style="font-family:'Marcellus',Georgia,serif;font-size:20px;line-height:1.4;color:#cc9924;font-style:italic;margin:14px 0 0;">9:30am UK / 10:30am CET / 4:30am NY</p>
+        <p style="font-family:'Marcellus',Georgia,serif;font-size:20px;line-height:1.4;color:#cc9924;font-style:italic;margin:14px 0 0;">9:30 to 11:30am UK</p>
         <div style="width:40px;height:2px;background:#cc9924;margin:28px auto;"></div>
       </td></tr>
 
       <tr><td style="padding:0 32px 28px;text-align:center;">
-        <a href="{{live_link_url}}" style="display:inline-block;background:#cc9924;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:18px 44px;text-decoration:none;">Open the live link</a>
+        <a href="{{custom_values.btw_am_session_link}}" style="display:inline-block;background:#cc9924;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:18px 44px;text-decoration:none;">Open the live link</a>
         <p style="font-family:Roboto,Arial,sans-serif;font-size:12px;color:#c5c3c2;margin:14px 0 0;">The same link works for the evening session at 5pm UK.</p>
       </td></tr>
 
@@ -427,9 +427,9 @@ Anthony &amp; Amy
 
 ## EMAIL 5 of 5 · 1 Hour Before Evening Session (Sunday 17 May, 4pm UK)
 
-**From:** Alchemy of Breath `<hello@alchemyofbreath.com>`
+**From:** Alchemy of Breath `<info@alchemyofbreath.com>`
 **Subject:** Evening session in 1 hour
-**Preview text:** 5pm UK / 6pm CET / 12pm NY. The link is below.
+**Preview text:** 5 to 7pm UK. The link is below.
 
 ### Plain-text version
 
@@ -438,9 +438,9 @@ Hi {{first_name}},
 
 Evening session in 1 hour.
 
-  5pm UK / 6pm CET / 12pm NY
+  5 to 7pm UK
 
-Your live link: {{live_link_url}}
+Your live link: {{custom_values.btw_am_session_link}}
 
 If you came to the morning, welcome back. If this is your first session, welcome.
 
@@ -458,18 +458,18 @@ Anthony &amp; Amy
   <tr><td align="center">
     <table cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background:#ffffff;">
       <tr><td style="padding:32px 32px 16px;text-align:center;background:#1a1a18;">
-        <img src="https://assets.cdn.filesafe.space/5lz2Wm44CNDwLSZWgAPf/media/69c78cc9104e4ff7ea6eb72d.png" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
+        <img src="{{custom_values.logo}}" alt="Alchemy of Breath" width="160" style="display:block;margin:0 auto;height:auto;opacity:0.95;" />
         <p style="font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#cc9924;margin:18px 0 0;">Today &middot; Evening session</p>
       </td></tr>
 
       <tr><td style="padding:40px 32px 8px;text-align:center;">
         <h1 style="font-family:'Marcellus',Georgia,serif;font-size:34px;line-height:1.2;letter-spacing:-0.02em;color:#1a1a18;margin:0;">In 1 hour.</h1>
-        <p style="font-family:'Marcellus',Georgia,serif;font-size:20px;line-height:1.4;color:#cc9924;font-style:italic;margin:14px 0 0;">5pm UK / 6pm CET / 12pm NY</p>
+        <p style="font-family:'Marcellus',Georgia,serif;font-size:20px;line-height:1.4;color:#cc9924;font-style:italic;margin:14px 0 0;">5 to 7pm UK</p>
         <div style="width:40px;height:2px;background:#cc9924;margin:28px auto;"></div>
       </td></tr>
 
       <tr><td style="padding:0 32px 28px;text-align:center;">
-        <a href="{{live_link_url}}" style="display:inline-block;background:#cc9924;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:18px 44px;text-decoration:none;">Open the live link</a>
+        <a href="{{custom_values.btw_am_session_link}}" style="display:inline-block;background:#cc9924;color:#ffffff;font-family:Roboto,Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:18px 44px;text-decoration:none;">Open the live link</a>
       </td></tr>
 
       <tr><td style="padding:8px 32px 32px;font-family:Roboto,Arial,sans-serif;font-size:16px;line-height:1.8;color:#4a4a46;text-align:center;">
@@ -497,7 +497,7 @@ Replace these placeholders inside GHL's email editor with your actual contact / 
 |---|---|
 | `{{first_name}}` | Contact's first name (GHL standard) |
 | `{{calendar_invite_url}}` | URL to the .ics file or the GHL calendar booking link |
-| `{{live_link_url}}` | The Zoom or platform URL for the live session |
+| `{{custom_values.btw_am_session_link}}` | The Zoom or platform URL for the live session |
 
 In GHL these will look more like `{{contact.first_name}}`, `{{custom_values.qs_live_link}}`, etc. Adjust to match your tenant's syntax.
 
